@@ -47,7 +47,7 @@ $(document).ready(function() {
 	$("button").click(function() {
 		$(this).remove();
 		//	display questionaire
-		$("section").css("display", "initial");
+		$("#wrapper").css("display", "initial", "background-color", "red");
 		//	set and display timer
 		var count = 10;
 		var counter = setInterval(function(){
@@ -55,7 +55,7 @@ $(document).ready(function() {
 			$("#countdown").html("Time Remaining: " + count);
 			//	display each question
 			for (var i = 0; i < allQuestions.length; i++) {
-				$("#form").append("<br>" + allQuestions[i].question + "<br>");
+				$("#form").append("<br><br>" + allQuestions[i].question + "<br>");
 				//	display respective answer options for each question
 				for (var j = 0; j < allQuestions[i].choices.length; j++) {
 					$("#form").append("<input id='choices' type='radio' name='bruce"+ i +"' value='"+ j +"'>" + allQuestions[i].choices[j]);
@@ -88,6 +88,7 @@ $(document).ready(function() {
 				$("#timer").remove();
 				$("#countdown").remove();
 				$("#form").remove();
+				$("#myResults").css("display", "initial");
 				$("#results").append(
 					"<h2>All Done</h2> <br> Right Answers: " + rightAnswer + 
 					"<br>Incorrect Answers: " + wrongAnswer + 
