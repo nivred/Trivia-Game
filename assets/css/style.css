@@ -1,0 +1,64 @@
+body {
+/*	background-color: pink;
+	min-height: 100%;
+*/	font-family: Arial;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+h1 {
+	font-family: 'Stalinist One', cursive;
+	text-align: center;
+}
+
+h2 {
+	font-size: 48px;
+	padding-top: 20px;
+}
+
+input {
+	margin-bottom: 20px;
+}
+
+.jumbotron {
+	background-image: url("../images/dragon.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: black;
+	padding: 185px 0;
+	text-align: center;
+}
+.jumbotron h1 {
+	font-size: 80px;
+	line-height: 60px;
+}
+
+.jumbotron h1 small {
+	color: darkred;
+}
+
+#wrapper {
+/*	background-color: yellow;
+	display: block;
+	min-height: 400px;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 60px;	
+	padding-bottom: 40px;
+	text-align: center;
+	width: 960px;
+*/}
+
+button {
+	font-size: 48px;
+	height: 75px;
+	margin-top: 20px;
+	width: 200px;
+}
+
+section {
+	display: none;
+	padding-top: 20px;
+}
+

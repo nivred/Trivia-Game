@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
-	<meta charset="utf-8">
-	<title>Trivia Game</title>
+	<meta charset="UTF-8" />
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
 </head>
 <body>
-	<div id="wrapper">
-		
-
+	<div class="jumbotron">
+		<h1 id="title">BRUCE LEE</h1>
+		<h1><small>Trivia Game</small></h1>
+		<button id="begin" type="button">Begin</button>
 	</div>
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<div id="wrapper" class="container-fluid">
+		<section>
+			<div id="timer"><span id="countdown"></span></div>
+			<form id="form">
+					
+			</form>
+			<div id="results"></div>
+		</section>
+	</div>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
