@@ -49,18 +49,12 @@ $(document).ready(function() {
 		//	display questionaire
 		$("#wrapper").css("display", "initial", "background-color", "red");
 		//	set and display timer
-		var count = 10;
+		var count = 60;
 		var counter = setInterval(function(){
 			count--;
 			$("#countdown").html("Time Remaining: " + count);
-			//	display each question
-			for (var i = 0; i < allQuestions.length; i++) {
-				$("#form").append("<br><br>" + allQuestions[i].question + "<br>");
-				//	display respective answer options for each question
-				for (var j = 0; j < allQuestions[i].choices.length; j++) {
-					$("#form").append("<input id='choices' type='radio' name='bruce"+ i +"' value='"+ j +"'>" + allQuestions[i].choices[j]);
-				}
-			}
+
+
 			// $("section").append("<button id='done' type='button'>Done</button>");
 			//	if time runs out process answers given
 			if (count <= 0) {
@@ -98,5 +92,19 @@ $(document).ready(function() {
 				// console.log('wrong answer ' + wrongAnswer);
 			}
 		}, 1000);
+			//	print function of questions and answers
+			showForm();
+
 	});
 });
+
+			function showForm(){
+				//	display each question
+				for (var i = 0; i < allQuestions.length; i++) {
+					$("#form").append("<br><br>" + allQuestions[i].question + "<br>");
+					//	display respective answer options for each question
+					for (var j = 0; j < allQuestions[i].choices.length; j++) {
+						$("#form").append("<input id='choices' type='radio' name='bruce"+ i +"' value='"+ j +"'>" + allQuestions[i].choices[j]);
+					}
+				}
+			}
